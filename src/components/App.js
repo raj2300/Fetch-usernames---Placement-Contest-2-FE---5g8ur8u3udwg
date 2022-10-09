@@ -2,7 +2,15 @@ import React from 'react'
 import '../styles/App.css';
 import { useState, useEffect } from 'react';
 const App = () => {
-//code here 
+ const[inputValue, setInputValue]=useState("");
+ const changeInput = (e) =>{
+  setInputValue(e.target.value);
+ }
+ const buttonClick=()=>{
+  setText((prev)=>prev + inputValue);
+  setInputValue("");
+ }
+
  
 
 
