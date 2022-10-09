@@ -3,6 +3,7 @@ import '../styles/App.css';
 import { useState, useEffect } from 'react';
 const App = () => {
  const[inputValue, setInputValue]=useState("");
+ const[text, setText]= useState("");
  const changeInput = (e) =>{
   setInputValue(e.target.value);
  }
