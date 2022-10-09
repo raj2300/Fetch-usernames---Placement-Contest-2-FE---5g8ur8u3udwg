@@ -19,7 +19,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 id="text">Type a number between 1 and 10</h1>
-      <input id="input" value={userId} onChange={changeInput} />
+      <input id="input" onChange={changeInput} />
       <p id="name">{name}</p>
     </div>
   );
